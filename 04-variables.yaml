@@ -1,5 +1,9 @@
 - name: variables to print
   hosts: web
+  vars: 
+    COURSE: "Devops with Aws"
+    DURATION: "120HRS"
+    TRAINER: "SIVAKUMAR REDDY M"
   tasks:
   - name: print the information
     ansible.builtin.debug:
