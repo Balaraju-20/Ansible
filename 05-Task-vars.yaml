@@ -1,6 +1,6 @@
 - name: variables to print
   hosts: web
-  vars: 
+  vars: #play level, all tasks in this play have access to this 
     COURSE: "Devops with Aws"
     DURATION: "120HRS"
     TRAINER: "SIVAKUMAR REDDY M"
