@@ -10,6 +10,8 @@
     private: false # this indicates information is non confidential
   tasks:
   - name: print the information
+    vars: #task level variable overrides play level
+      COURSE: "Ansible"
     ansible.builtin.debug:
       msg: "Hi I am learning {{COURSE}} Variable from task level"
   
