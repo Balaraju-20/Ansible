@@ -5,10 +5,5 @@
   - name: install nginx
     ansible.builtin.package:
       name: nginx
-      state: present
+      state: present # present == install remove == absent
 
-  - name: run nginx
-    ansible.builtin.service:
-      name: nginx
-      state: started
-      
