@@ -16,4 +16,4 @@
   tasks:
     - name: print vars from files
       ansible.builtin.debug:
-        msg: "hi IAM learning {{COURSE}}, DURATION: {{5 days}}, TRAINER: {{ME}}" 
+        msg: "hi IAM learning {{COURSE}}, DURATION: {{DURATION}}, TRAINER: {{TRAINER}}" 
