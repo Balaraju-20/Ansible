@@ -9,7 +9,11 @@
 
 - name : 06-vars from files
   hosts: web
+  vars: 
+    COURSE: "ANSIBLE" 
+    DURATION: "5 DAYS"
+    TRAINER: "ME"
   tasks:
     - name: print vars from files
       ansible.builtin.debug:
-        msg: "hi IAM learning {{Ansible}}, DURATION: {{5 days}}, Trainer: {{ME}}" 
+        msg: "hi IAM learning {{COURSE}}, DURATION: {{5 days}}, TRAINER: {{ME}}" 
