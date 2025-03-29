@@ -6,3 +6,10 @@
   - name: print the course information
     ansible.builtin.debug:
       msg: "Hi I am learning {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}" 
+
+- name : 06-vars from files
+  hosts: web
+  tasks:
+    - name: print vars from files
+      ansible.builtin.debug:
+        msg: "hi IAM learning {{Ansible}}, DURATION: {{5 days}}, Trainer: {{ME}}" 
