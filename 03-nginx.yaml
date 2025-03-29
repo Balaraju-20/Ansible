@@ -7,3 +7,8 @@
       name: nginx
       state: present # present == install remove == absent
 
+  - name: run nginx
+    ansible.builtin.service:
+      name: nginx
+      state: started
+      
